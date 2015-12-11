@@ -23,4 +23,18 @@ class Ball {
  void move() {
    loc.add(vel);
   }
+ void bounce() {
+   if (loc. x > width) {
+     vel.x = -vel.x;
+   }
+   if (loc.x < 0) {
+     vel.x = -vel.x;
+   }
+   if (loc.y > height) {
+     vel.y = -vel.y;
+   }
+   if (loc.y < 0) {
+     vel.y = -vel.y;
+   }
+}
 }
